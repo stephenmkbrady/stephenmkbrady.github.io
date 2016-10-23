@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     
-    <title>cosmic-engineer</title>
+    <title>Tag: hapi.js | cosmic-engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="cosmic-engineer">
-<meta property="og:url" content="http://blog.cosmic-engineer.com/index.html">
+<meta property="og:url" content="http://blog.cosmic-engineer.com/tags/hapi-js/index.html">
 <meta property="og:site_name" content="cosmic-engineer">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cosmic-engineer">
@@ -275,21 +275,24 @@
 
             
             <section id="main">
-    <article id="post-First-production-site" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
+<div class="timeline timeline-wrap">
+    <div class="timeline-row timeline-row-major">
+        <span class="node"><i class="fa fa-tag"></i></span>
+        <h1 class="title">#hapi.js</h1>
+    </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
         <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/23/First-production-site/">First, but really second production site</a>
+            <a class="timeline-article-title" href="/2016/10/23/First-production-site/">First, but really second production site</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
         <a href="/2016/10/23/First-production-site/">
@@ -298,153 +301,18 @@
     </div>
 
 
-                        
-                        
+                    
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
         <a class="tag-link" href="/tags/aws/">aws</a>, <a class="tag-link" href="/tags/aws-ses/">aws ses</a>, <a class="tag-link" href="/tags/css3/">css3</a>, <a class="tag-link" href="/tags/hapi-js/">hapi.js</a>, <a class="tag-link" href="/tags/heroku/">heroku</a>, <a class="tag-link" href="/tags/html5/">html5</a>, <a class="tag-link" href="/tags/javascript/">javascript</a>, <a class="tag-link" href="/tags/material/">material</a>, <a class="tag-link" href="/tags/node-js/">node.js</a>, <a class="tag-link" href="/tags/responsive/">responsive</a>, <a class="tag-link" href="/tags/static/">static</a>, <a class="tag-link" href="/tags/tech/">tech</a>, <a class="tag-link" href="/tags/web/">web</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h1 id="The-final-product"><a href="#The-final-product" class="headerlink" title="The final product"></a>The final product</h1><img src="/2016/10/23/First-production-site/talentsbeyondrefugees.com.png" alt="talentsbeyondrefugees.com.png" title="">
-<p><a href="www.talentsbeyondrefugees.com">www.talentsbeyondrefugees.com</a></p>
-<p>Attractive responsive landing page with the ability to send CV’s directly from the page.</p>
-<h1 id="First-stage-of-the-site"><a href="#First-stage-of-the-site" class="headerlink" title="First stage of the site"></a>First stage of the site</h1><p>I had this initially hosted on google app engine, which is overkill for this kind of site both for what it provides and for how much it costs. In 2 weeks of my month free trial the site cost almost 13 euros. </p>
-<p>I had to use recaptcha on the form as it took a bot less than 4 hours to find my site and to start sending emails, using up the email limit within minutes.</p>
-<h2 id="Google-App-Engine"><a href="#Google-App-Engine" class="headerlink" title="Google App Engine"></a>Google App Engine</h2><p>CBT Nuggets’ Garth Schulte says Google engineers are predicting the price of cloud services to drop at the rate of Moore’s law. They’re not in my price range yet.</p>
-<div class="video-container"><iframe src="//www.youtube.com/embed/342KEaxFVjM" frameborder="0" allowfullscreen></iframe></div>
-<p><a href="https://www.youtube.com/watch?v=342KEaxFVjM" target="_blank" rel="external">Cloud Wars: Amazon (AWS) vs. Google (GCP) vs. Microsoft (Azure)</a></p>
-<p>GAE is very interesting and easy to use, but not so easy to control. </p>
-<ul>
-<li>Scaling is on by default and you can’t turn it off.</li>
-<li>It doesn’t use the cheapest Google compute has to offer.</li>
-</ul>
-<p>You can’t force it to do so. If I have this wrong, please correct me in the comments, I tried configuring using compute and gcloud to no avail.</p>
-<p>If I use google cloud again, it will probably be the compute engine and not the app engine unless I somehow get involved in a pokemon go clone. There are a lot better/cheaper options for running node.js for a spendthrift not expecting a lot of traffic. </p>
-<p>The site used and still uses AWS SES, amazon’s simple email service which let’s me send 200 emails per 24 hour period at 1 email/second for free.</p>
-<p>Styling is done in Materializecss and uses the beautiful <a href="https://github.com/JeremyFagis/dropify" target="_blank" rel="external">Dropify</a>.</p>
-<h1 id="Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku"><a href="#Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku" class="headerlink" title="Migrating from Google App Engine to Github pages and Heroku"></a>Migrating from Google App Engine to Github pages and Heroku</h1><h2 id="Serverless-setup-AWS-Lambda"><a href="#Serverless-setup-AWS-Lambda" class="headerlink" title="Serverless setup: AWS Lambda"></a>Serverless setup: AWS Lambda</h2><p>I initially wanted to go serverless, move to github and use AWS Lambda for sending emails, but I need to email attachments so I kept my node.js Hapi server and moved it to Heroku. </p>
-<p><a href="https://aws.amazon.com/lambda/faqs/" target="_blank" rel="external">AWS Lambda</a></p>
-<h2 id="Static-page-server-Setting-up-Github-Pages"><a href="#Static-page-server-Setting-up-Github-Pages" class="headerlink" title="Static page server: Setting up Github Pages"></a>Static page server: Setting up Github Pages</h2><p>This process is really easy and well documented.</p>
-<img src="/2016/10/23/First-production-site/github_page_1.PNG" alt="Enable Github pages" title="Enable Github pages">
-<p>Figure 1: In the github repo settings where I have the static site, I enable the github pages.</p>
-<p><a href="https://github.com/bradys/talentsbeyondrefugees.github.io" target="_blank" rel="external">talentsbeyondrefugees static site on Github</a></p>
-<img src="/2016/10/23/First-production-site/github_page_2.PNG" alt="Select the branch for Github pages" title="Select the branch for Github pages">
-<p>Figure 2: Choose which branch will be on the site, I can even just serve a /docs folder in the repo.</p>
-<img src="/2016/10/23/First-production-site/github_page_3.PNG" alt="Setting the custom domain" title="Setting the custom domain">
-<p>Figure 3: Tell github which domain I’ll be using, I could use blog.talentsbeyondrefugees.com or just talentsbeyondrefugees.com which is the apex domain. I added both www and the apex.</p>
-<img src="/2016/10/23/First-production-site/github_page_4.PNG" alt="Enable Github pages" title="Enable Github pages">
-<p>Figure 4: github keeps checking my domain and finds I domain name config isn’t correct. That’s because I’ve still got the settings for pointing domain to google app engine.</p>
-<img src="/2016/10/23/First-production-site/github_page_5.PNG" alt="CNAME file in repo" title="CNAME file in repo">
-<p>Figure 5: Just noticed that github keeps a text file with the domain name in the repository.</p>
-<img src="/2016/10/23/First-production-site/google_dns_settings.PNG" alt="google_dns_settings.PNG" title="">
-<p>Figure 6: This is namecheaps cpanel for configuring my domain. Everything highlighted in yellow is added for google app engine site.<br>The aaaa and a records are for google’s magic routers I think and the cname is what is pointing the website to that domain, need to delete all this.<br>The txt record with “google-site-verification…” value is so google will let me access their hostmaster panel, it’s proof that I own the domain for adding analytics, etc.<br>At the bottom I’ve already added the github cname, that’s the only record github wants in my domain. </p>
-<img src="/2016/10/23/First-production-site/google_dns_settings_2.PNG" alt="google_dns_settings_2.PNG" title="">
-<p>Figure 7: The only records I have now are for aws’ simple email service, to verify that I own the domain and I can send emails using ses with that domain. I don’t need to do this for ses as I’m using the ses api but I would have to for smtp. I still do it as it will let me use the api to send from “example@talentsbeyondrefugees.com” otherwise I would have to verify an email address like “myemail@gmail.com” in the ses control panel and I then I can send from that. </p>
-<p>I have to wait a day or 2 for the new settings to propagate through the web. The symptoms of which are; if I try to access www.talentsbeyondrefugees.com from my laptop then it might work fine using heroku server and github pages, but if I try from my PC, it might work fine but still be using the google site. </p>
-<h1 id="Server-side-setup"><a href="#Server-side-setup" class="headerlink" title="Server side setup "></a>Server side setup </h1><p>Node.js running on Heroku, documentation is great and easy to follow, and heroku cli makes it easy.</p>
-<p>Server is simple, it’s just listening for a POST request and then email what’s posted:<br>The static site uses a form which posts to my server:</p>
-<form id="cvForm" action="https://aqueous-earth-55235.herokuapp.com/upload" enctype="multipart/form-data" method="post">
-
-
-<img src="/2016/10/23/First-production-site/server.PNG" alt="Hapi server" title="Hapi server">
-<p>Figure 8: The server script is quite simple, uses hapi.js on node.js listens for a post on port 80 to /upload and then reads in the form details if the captcha is filled out and correct and then emails if they are and responds, or responds with an error if they aren’t ok. I display the response message on the static page. CORS has to be enabled on the server.<br>It took me an afternoon to get comfortable with hapi, real easy to use.</p>
-<p><a href="http://hapijs.com/" target="_blank" rel="external">Hapi.js</a></p>
-<p>The heroku server does sleep after an hour of inactivity, so sending CV’s takes a little longer, but with added feedback and preloader on the form it isn’t concerning.</p>
-</form>
-        
+                </div>
+            </div>
         </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
+    
 </div>
-
-    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/" data-id="ciumtndcd0000awuzgout7xxf" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/">Comments</a>
-    
-
-        </footer>
-    </div>
-    
-</article>
-
-
 </section>
             
                 <aside id="sidebar">
