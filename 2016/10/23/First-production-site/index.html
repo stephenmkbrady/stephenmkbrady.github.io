@@ -18,7 +18,7 @@ www.talentsbeyondrefugees.com
 Attractive responsive landing page with the ability to send CV’s directly from the page.
 First stage of the siteI had this initially hosted on google ap">
 <meta property="og:image" content="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/server.PNG">
-<meta property="og:updated_time" content="2016-10-23T20:53:09.515Z">
+<meta property="og:updated_time" content="2016-10-23T20:58:56.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="First, but really second production site">
 <meta name="twitter:description" content="The final product
@@ -332,21 +332,22 @@ First stage of the siteI had this initially hosted on google ap">
 <p>Attractive responsive landing page with the ability to send CV’s directly from the page.</p>
 <h1 id="First-stage-of-the-site"><a href="#First-stage-of-the-site" class="headerlink" title="First stage of the site"></a>First stage of the site</h1><p>I had this initially hosted on google app engine, which is overkill for this kind of site both for what it provides and for how much it costs. In 2 weeks of my month free trial the site cost almost 13 euros. </p>
 <p>I had to use recaptcha on the form as it took a bot less than 4 hours to find my site and to start sending emails, using up the email limit within minutes.</p>
-<h2 id="Google-App-Engine"><a href="#Google-App-Engine" class="headerlink" title="Google App Engine"></a>Google App Engine</h2><p>CBT Nuggets’ Garth Schulte says Google engineers are predicting the price of cloud services to drop at the rate of Moore’s law. They’re not in my price range yet.</p>
+<h1 id="Google-App-Engine"><a href="#Google-App-Engine" class="headerlink" title="Google App Engine"></a>Google App Engine</h1><p>CBT Nuggets’ Garth Schulte says Google engineers are predicting the price of cloud services to drop at the rate of Moore’s law. They’re not in my price range yet.</p>
 <div class="video-container"><iframe src="//www.youtube.com/embed/342KEaxFVjM" frameborder="0" allowfullscreen></iframe></div>
 <p><a href="https://www.youtube.com/watch?v=342KEaxFVjM" target="_blank" rel="external">Cloud Wars: Amazon (AWS) vs. Google (GCP) vs. Microsoft (Azure)</a></p>
-<h2 id="GAE-pro’s-and-con’s-I-noticed-with-my-brief-usage"><a href="#GAE-pro’s-and-con’s-I-noticed-with-my-brief-usage" class="headerlink" title="GAE pro’s and con’s I noticed with my brief usage."></a>GAE pro’s and con’s I noticed with my brief usage.</h2><p>Pros: </p>
-<ul>
+<h3 id="Pros"><a href="#Pros" class="headerlink" title="Pros:"></a>Pros:</h3><ul>
 <li>Very fast compared to Github.</li>
 <li>Very easy to setup and use. </li>
-<li>Great, detailed, configurable logging in the console. Didn’t need to setup logging for my server.<br>Cons:</li>
+<li>Great, detailed, configurable logging in the console. Didn’t need to setup logging for my server.</li>
+</ul>
+<h3 id="Cons"><a href="#Cons" class="headerlink" title="Cons:"></a>Cons:</h3><ul>
 <li>Scaling is on by default and you can’t turn it off.</li>
 <li>It doesn’t use the cheapest Google compute has to offer which is the f1-micro. Instead it will use a minimum of 2 g1-small’s.<br>-Compute doesn’t appear to be configurable for the app engine although it is used and you can get the logs from it. If I have this wrong, please correct me in the comments. I tried configuring using compute and gcloud to no avail.</li>
 </ul>
 <p>If I use google cloud again, it will probably be the compute engine and not the app engine unless I somehow get involved in a pokemon go clone. There are a lot better/cheaper options for running node.js for a spendthrift not expecting a lot of traffic. </p>
 <p>The site used and still uses AWS SES, amazon’s simple email service which let’s me send 200 emails per 24 hour period at 1 email/second for free.</p>
 <p>Styling is done in Materializecss and uses the beautiful <a href="https://github.com/JeremyFagis/dropify" target="_blank" rel="external">Dropify</a>.</p>
-<h1 id="Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku"><a href="#Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku" class="headerlink" title="Migrating from Google App Engine to Github pages and Heroku"></a>Migrating from Google App Engine to Github pages and Heroku</h1><h2 id="Serverless-setup-AWS-Lambda"><a href="#Serverless-setup-AWS-Lambda" class="headerlink" title="Serverless setup: AWS Lambda"></a>Serverless setup: AWS Lambda</h2><p>I initially wanted to go serverless, move to github and use AWS Lambda for sending emails, but I need to email attachments so I kept my node.js Hapi server and moved it to Heroku. </p>
+<h1 id="Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku"><a href="#Migrating-from-Google-App-Engine-to-Github-pages-and-Heroku" class="headerlink" title="Migrating from Google App Engine to Github pages and Heroku"></a>Migrating from Google App Engine to Github pages and Heroku</h1><h2 id="My-goal-Serverless-setup-with-AWS-Lambda"><a href="#My-goal-Serverless-setup-with-AWS-Lambda" class="headerlink" title="My goal: Serverless setup with AWS Lambda"></a>My goal: Serverless setup with AWS Lambda</h2><p>I initially wanted to go serverless, move to github and use AWS Lambda for sending emails, but I need to email attachments so I kept my node.js Hapi server and moved it to Heroku. </p>
 <p><a href="https://aws.amazon.com/lambda/faqs/" target="_blank" rel="external">AWS Lambda</a></p>
 <h2 id="Static-page-server-Setting-up-Github-Pages"><a href="#Static-page-server-Setting-up-Github-Pages" class="headerlink" title="Static page server: Setting up Github Pages"></a>Static page server: Setting up Github Pages</h2><p>This process is really easy and well documented.</p>
 <img src="/2016/10/23/First-production-site/github_page_1.PNG" alt="Enable Github pages" title="Enable Github pages">
