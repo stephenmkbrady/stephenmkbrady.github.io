@@ -277,13 +277,12 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="Adding-embedded-html5-video-to-hexo"><a href="#Adding-embedded-html5-video-to-hexo" class="headerlink" title="Adding embedded html5 video to hexo"></a>Adding embedded html5 video to hexo</h2><h1 id="Install"><a href="#Install" class="headerlink" title="Install:"></a>Install:</h1><p>npm i hexo-tag-html5video</p>
+            <h2 id="Adding-embedded-html5-video-to-hexo"><a href="#Adding-embedded-html5-video-to-hexo" class="headerlink" title="Adding embedded html5 video to hexo"></a>Adding embedded html5 video to hexo</h2><h1 id="Use-case"><a href="#Use-case" class="headerlink" title="Use case"></a>Use case</h1><p>Sometimes I stumble accross a nice webm on a reddit/forum/elsewhere and I squirrel it away to illustrate an emotion or decorate a post. These webm’s are small, not worth uploading to youtube or some other video host. So why not host them myself.</p>
+<h1 id="Install"><a href="#Install" class="headerlink" title="Install:"></a>Install:</h1><p>npm i hexo-tag-html5video</p>
 <p>Add hexo-tag-html5 to your _config.yml file including all the other packages you’re using. (Once you include one, you will need to include them all, grab the list from you package.json)</p>
 <p>plugins: [hexo-tag-html5,<br>          hexo-deployer-git,<br>          hexo-server,<br>          hexo-generator-index,<br>          hexo-generator-archive,<br>          hexo-generator-category,<br>          hexo-generator-json-content,<br>          hexo-generator-tag,<br>          hexo-renderer-ejs,<br>          hexo-renderer-marked,<br>          hexo-renderer-stylus,<br>          hexo-tag-bootstrap,<br>          hexo-tag-fontawesome,<br>          hexo-tag-leaflet]</p>
 <h1 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h1><video width="100%" height="250px" controls><source src=" 
 /2016/10/24/hexo-tag-webm/big-buck-bunny_trailer.webm" type="video/webm"> Your browser does not support the webm tag.</video> 
-<video width="100%" height="250px" controls><source src=" 
-/2016/10/24/hexo-tag-webm/big-buck-bunny_trailer.webm" type="video/mp4"> Your browser does not support the webm tag.</video> 
 <h1 id="Usage"><a href="#Usage" class="headerlink" title="Usage:"></a>Usage:</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">With no args, the defaults are used:</div><div class="line">width = &apos;100%&apos;</div><div class="line">height = &apos;250px&apos;</div><div class="line">codec = &apos;video/webm&apos;</div><div class="line"></div><div class="line">&#123;% html5video %&#125; </div><div class="line">&#123;% asset_path big-buck-bunny_trailer.webm %&#125;</div><div class="line">&#123;% endhtml5video %&#125; </div><div class="line"></div><div class="line">or with args:</div><div class="line"></div><div class="line">&#123;% html5video &apos;100%&apos; &apos;250px&apos; &apos;video/mp4&apos; %&#125; </div><div class="line">&#123;% asset_path big-buck-bunny_trailer.webm %&#125;</div><div class="line">&#123;% endhtml5video %&#125; </div><div class="line"></div></pre></td></tr></table></figure>
 
         
@@ -295,7 +294,7 @@
 
 </div>
 
-    <a data-url="http://blog.cosmic-engineer.com/2016/10/24/hexo-tag-webm/" data-id="ciuofpalr0003e8uzed6gxxgj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://blog.cosmic-engineer.com/2016/10/24/hexo-tag-webm/" data-id="ciuogn99a0000bkuz0iczj9yd" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -415,7 +414,7 @@
 <h1 id="Hyperlapse-Generator"><a href="#Hyperlapse-Generator" class="headerlink" title="Hyperlapse Generator"></a>Hyperlapse Generator</h1><p><a href="https://bitbucket.org/rasput/python-study" target="_blank" rel="external">pyHyperlapse Bitbucket Repository</a><br>This python tool generates a hyperlapse video using Google Street View Image API and a kml file.<br>Compatible with both Windows and Linux.</p>
 <blockquote><p>Hyperlapse (also walklapse, spacelapse, stop-motion time-lapse,<br>motion timelapse, moving timelapse) is an exposure technique in<br>time-lapse photography, in which the position of the camera is being<br>changed between each exposure in order to create a tracking shot<br>in timelapse sequences. In contrast to a simple motion timelapse<br>– dolly shots, which are realized with short camera sliders;<br>in hyperlapse photography, the camera is being moved through very long distances.</p>
 <footer><strong>Wikipedia</strong></footer></blockquote>
-<div id="leaflet632" style="
+<div id="leaflet1173" style="
             height: 400px;
             width: 100%;
             margin: 0px;
@@ -424,8 +423,8 @@
 </div>
 <script defer="defer">
   window.hexoLmaps = window.hexoLmaps || { maps: {}};
-  window.hexoLmaps.maps['initleaflet632'] = function init() {
-    var mymap = L.map('leaflet632');
+  window.hexoLmaps.maps['initleaflet1173'] = function init() {
+    var mymap = L.map('leaflet1173');
     mymap.setView([51.307778 , 11.049167], 13);
     var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     L.tileLayer(osmURL, {
@@ -792,7 +791,7 @@ if (typeof module !== 'undefined') module.exports = toGeoJSON;</script>
 
 </div>
 
-    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/pyHyperlapse/" data-id="ciuofpale0000e8uz7u0tjgto" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/pyHyperlapse/" data-id="ciuogn99q0003bkuzm4064v5o" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -966,7 +965,7 @@ if (typeof module !== 'undefined') module.exports = toGeoJSON;</script>
 
 </div>
 
-    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/" data-id="ciuofpalk0001e8uzw7f8x7xm" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/" data-id="ciuogn99a0001bkuz3jdp63d3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
