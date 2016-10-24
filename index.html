@@ -3,29 +3,14 @@
 <head>
     <meta charset="utf-8">
     
-    <title>First, but really second production site | cosmic-engineer</title>
+    <title>cosmic-engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="The final product
-www.talentsbeyondrefugees.com
-Attractive responsive landing page with the ability to send CV’s directly from the page.
-First stage of the siteI had this initially hosted on google ap">
-<meta property="og:type" content="article">
-<meta property="og:title" content="First, but really second production site">
-<meta property="og:url" content="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="cosmic-engineer">
+<meta property="og:url" content="http://blog.cosmic-engineer.com/index.html">
 <meta property="og:site_name" content="cosmic-engineer">
-<meta property="og:description" content="The final product
-www.talentsbeyondrefugees.com
-Attractive responsive landing page with the ability to send CV’s directly from the page.
-First stage of the siteI had this initially hosted on google ap">
-<meta property="og:image" content="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/server.PNG">
-<meta property="og:updated_time" content="2016-10-23T20:58:56.035Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="First, but really second production site">
-<meta name="twitter:description" content="The final product
-www.talentsbeyondrefugees.com
-Attractive responsive landing page with the ability to send CV’s directly from the page.
-First stage of the siteI had this initially hosted on google ap">
-<meta name="twitter:image" content="http://blog.cosmic-engineer.com/2016/10/23/First-production-site/server.PNG">
+<meta name="twitter:title" content="cosmic-engineer">
     
 
     
@@ -253,15 +238,656 @@ First stage of the siteI had this initially hosted on google ap">
 
         <div class="outer">
             
-            <section id="main"><article id="post-First-production-site" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main">
+    <article id="post-hexo-tag-webm" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 class="article-title" itemprop="name">
-            First, but really second production site
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/10/24/hexo-tag-webm/">hexo tag webm</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/10/24/hexo-tag-webm/">
+            <time datetime="2016-10-24T14:15:29.000Z" itemprop="datePublished">2016-10-24</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/hexo/">hexo</a>, <a class="tag-link" href="/tags/hexo-tag/">hexo-tag</a>, <a class="tag-link" href="/tags/npm/">npm</a>, <a class="tag-link" href="/tags/tag/">tag</a>, <a class="tag-link" href="/tags/video/">video</a>, <a class="tag-link" href="/tags/webm/">webm</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>Quick test for embedded webm’s.</p>
+<p>Usage:</p>
+
+big-buck-bunny_trailer.webm
+
+{% webm {% asset_path big-buck-bunny_trailer.webm %} %}
+
+
+code:
+hexo.extend.tag.register('webm', function(args){
+  var filename = args[0];
+  var path = pathFn.join(hexo.source_dir, filename);
+
+  return '<video src="' + path + '" width="560" height="315" controls></video>';
+});
+
+<p><video src="C:\Users\cosmi\Desktop\hexo_blog\cosmic-engineer\source\{%" width="560" height="315" controls></video> %}</p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.cosmic-engineer.com/2016/10/24/hexo-tag-webm/" data-id="ciuo9rfyj0001aouzalr4va4t" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.cosmic-engineer.com/2016/10/24/hexo-tag-webm/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://blog.cosmic-engineer.com/2016/10/24/hexo-tag-webm/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-pyHyperlapse" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/10/23/pyHyperlapse/">pyHyperlapse</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/10/23/pyHyperlapse/">
+            <time datetime="2016-10-23T19:37:00.000Z" itemprop="datePublished">2016-10-23</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/cli/">cli</a>, <a class="tag-link" href="/tags/google-street-view-image-api/">google street view image api</a>, <a class="tag-link" href="/tags/hyperlapse/">hyperlapse</a>, <a class="tag-link" href="/tags/python/">python</a>, <a class="tag-link" href="/tags/python27/">python27</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <img src="/2016/10/23/pyHyperlapse/jumbotron_img.png" alt="jumbotron_img.png" title="">
+<h1 id="Hyperlapse-Generator"><a href="#Hyperlapse-Generator" class="headerlink" title="Hyperlapse Generator"></a>Hyperlapse Generator</h1><p><a href="https://bitbucket.org/rasput/python-study" target="_blank" rel="external">pyHyperlapse Bitbucket Repository</a><br>This python tool generates a hyperlapse video using Google Street View Image API and a kml file.<br>Compatible with both Windows and Linux.</p>
+<blockquote><p>Hyperlapse (also walklapse, spacelapse, stop-motion time-lapse,<br>motion timelapse, moving timelapse) is an exposure technique in<br>time-lapse photography, in which the position of the camera is being<br>changed between each exposure in order to create a tracking shot<br>in timelapse sequences. In contrast to a simple motion timelapse<br>– dolly shots, which are realized with short camera sliders;<br>in hyperlapse photography, the camera is being moved through very long distances.</p>
+<footer><strong>Wikipedia</strong></footer></blockquote>
+<div id="leaflet8818" style="
+            height: 400px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px
+            ">
+</div>
+<script defer="defer">
+  window.hexoLmaps = window.hexoLmaps || { maps: {}};
+  window.hexoLmaps.maps['initleaflet8818'] = function init() {
+    var mymap = L.map('leaflet8818');
+    mymap.setView([51.307778 , 11.049167], 13);
+    var osmURL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    L.tileLayer(osmURL, {
+        attribution: 'Map data © &lt;a href=&quot;http://openstreetmap.org&quot;&gt;OpenStreetMap&lt;/a&gt; contributors.',
+        maxZoom: 18
+    }).addTo(mymap);
+    var geoJSON = '/2016/10/23/pyHyperlapse/Directions.geojson'
+    if (geoJSON) {
+      doLoadFile(geoJSON, function(data) {
+        var layer = L.geoJson(JSON.parse(data));
+        layer.addTo(mymap);
+        mymap.fitBounds(layer.getBounds());
+      });
+    }
+
+    
+  }
+  function doLoadFile(url, callback) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        callback(xhttp.responseText);
+      }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+  }
+  function makeMaps() {
+    for (var map in window.hexoLmaps.maps) {
+       console.log('map #', map);
+       window.hexoLmaps.maps[map]();
+    }
+  }
+  function doLoadScript(url, callback) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = url;
+    script.onreadystatechange = script.onload = function() {
+      if (!callback.done && (!script.readyState || /loaded|complete/.test(script.readyState))) {
+        callback.done = true;
+        callback();
+      }
+    };
+    document.querySelector('head').appendChild(script);
+  }
+  function loadScript() {
+    window.hexoLmaps.mapScripLoaded = true;
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css';
+    document.querySelector('head').appendChild(css);
+
+    doLoadScript('http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js', makeMaps)
+  }
+  if (!window.hexoLmaps.mapScripLoaded) {
+    loadScript();
+  }
+</script><script>toGeoJSON = (function() {
+    'use strict';
+
+    var removeSpace = (/\s*/g),
+        trimSpace = (/^\s*|\s*$/g),
+        splitSpace = (/\s+/);
+    // generate a short, numeric hash of a string
+    function okhash(x) {
+        if (!x || !x.length) return 0;
+        for (var i = 0, h = 0; i < x.length; i++) {
+            h = ((h << 5) - h) + x.charCodeAt(i) | 0;
+        } return h;
+    }
+    // all Y children of X
+    function get(x, y) { return x.getElementsByTagName(y); }
+    function attr(x, y) { return x.getAttribute(y); }
+    function attrf(x, y) { return parseFloat(attr(x, y)); }
+    // one Y child of X, if any, otherwise null
+    function get1(x, y) { var n = get(x, y); return n.length ? n[0] : null; }
+    // https://developer.mozilla.org/en-US/docs/Web/API/Node.normalize
+    function norm(el) { if (el.normalize) { el.normalize(); } return el; }
+    // cast array x into numbers
+    function numarray(x) {
+        for (var j = 0, o = []; j < x.length; j++) o[j] = parseFloat(x[j]);
+        return o;
+    }
+    function clean(x) {
+        var o = {};
+        for (var i in x) if (x[i]) o[i] = x[i];
+        return o;
+    }
+    // get the content of a text node, if any
+    function nodeVal(x) {
+        if (x) { norm(x); }
+        return (x && x.firstChild && x.firstChild.nodeValue) || '';
+    }
+    // get one coordinate from a coordinate array, if any
+    function coord1(v) { return numarray(v.replace(removeSpace, '').split(',')); }
+    // get all coordinates from a coordinate array as [[],[]]
+    function coord(v) {
+        var coords = v.replace(trimSpace, '').split(splitSpace),
+            o = [];
+        for (var i = 0; i < coords.length; i++) {
+            o.push(coord1(coords[i]));
+        }
+        return o;
+    }
+    function coordPair(x) {
+        var ll = [attrf(x, 'lon'), attrf(x, 'lat')],
+            ele = get1(x, 'ele');
+        if (ele) ll.push(parseFloat(nodeVal(ele)));
+        return ll;
+    }
+
+    // create a new feature collection parent object
+    function fc() {
+        return {
+            type: 'FeatureCollection',
+            features: []
+        };
+    }
+
+    var serializer;
+    if (typeof XMLSerializer !== 'undefined') {
+        serializer = new XMLSerializer();
+    // only require xmldom in a node environment
+    } else if (typeof exports === 'object' && typeof process === 'object' && !process.browser) {
+        serializer = new (require('xmldom').XMLSerializer)();
+    }
+    function xml2str(str) { return serializer.serializeToString(str); }
+
+    var t = {
+        kml: function(doc, o) {
+            o = o || {};
+
+            var gj = fc(),
+                // styleindex keeps track of hashed styles in order to match features
+                styleIndex = {},
+                // atomic geospatial types supported by KML - MultiGeometry is
+                // handled separately
+                geotypes = ['Polygon', 'LineString', 'Point', 'Track'],
+                // all root placemarks in the file
+                placemarks = get(doc, 'Placemark'),
+                styles = get(doc, 'Style');
+
+            for (var k = 0; k < styles.length; k++) {
+                styleIndex['#' + attr(styles[k], 'id')] = okhash(xml2str(styles[k])).toString(16);
+            }
+            for (var j = 0; j < placemarks.length; j++) {
+                gj.features = gj.features.concat(getPlacemark(placemarks[j]));
+            }
+            function kmlColor(v) {
+                var color, opacity;
+                v = v || "";
+                if (v.substr(0, 1) === "#") v = v.substr(1);
+                if (v.length === 6 || v.length === 3) color = v;
+                if (v.length === 8) {
+                    opacity = parseInt(v.substr(0, 2), 16) / 255;
+                    color = v.substr(2);
+                }
+                return [color, isNaN(opacity) ? undefined : opacity];
+            }
+            function gxCoord(v) { return numarray(v.split(' ')); }
+            function gxCoords(root) {
+                var elems = get(root, 'coord', 'gx'), coords = [];
+                for (var i = 0; i < elems.length; i++) coords.push(gxCoord(nodeVal(elems[i])));
+                return coords;
+            }
+            function getGeometry(root) {
+                var geomNode, geomNodes, i, j, k, geoms = [];
+                if (get1(root, 'MultiGeometry')) return getGeometry(get1(root, 'MultiGeometry'));
+                if (get1(root, 'MultiTrack')) return getGeometry(get1(root, 'MultiTrack'));
+                for (i = 0; i < geotypes.length; i++) {
+                    geomNodes = get(root, geotypes[i]);
+                    if (geomNodes) {
+                        for (j = 0; j < geomNodes.length; j++) {
+                            geomNode = geomNodes[j];
+                            if (geotypes[i] == 'Point') {
+                                geoms.push({
+                                    type: 'Point',
+                                    coordinates: coord1(nodeVal(get1(geomNode, 'coordinates')))
+                                });
+                            } else if (geotypes[i] == 'LineString') {
+                                geoms.push({
+                                    type: 'LineString',
+                                    coordinates: coord(nodeVal(get1(geomNode, 'coordinates')))
+                                });
+                            } else if (geotypes[i] == 'Polygon') {
+                                var rings = get(geomNode, 'LinearRing'),
+                                    coords = [];
+                                for (k = 0; k < rings.length; k++) {
+                                    coords.push(coord(nodeVal(get1(rings[k], 'coordinates'))));
+                                }
+                                geoms.push({
+                                    type: 'Polygon',
+                                    coordinates: coords
+                                });
+                            } else if (geotypes[i] == 'Track') {
+                                geoms.push({
+                                    type: 'LineString',
+                                    coordinates: gxCoords(geomNode)
+                                });
+                            }
+                        }
+                    }
+                }
+                return geoms;
+            }
+            function getPlacemark(root) {
+                var geoms = getGeometry(root), i, properties = {},
+                    name = nodeVal(get1(root, 'name')),
+                    styleUrl = nodeVal(get1(root, 'styleUrl')),
+                    description = nodeVal(get1(root, 'description')),
+                    timeSpan = get1(root, 'TimeSpan'),
+                    extendedData = get1(root, 'ExtendedData'),
+                    lineStyle = get1(root, 'LineStyle'),
+                    polyStyle = get1(root, 'PolyStyle');
+
+                if (!geoms.length) return [];
+                if (name) properties.name = name;
+                if (styleUrl && styleIndex[styleUrl]) {
+                    properties.styleUrl = styleUrl;
+                    properties.styleHash = styleIndex[styleUrl];
+                }
+                if (description) properties.description = description;
+                if (timeSpan) {
+                    var begin = nodeVal(get1(timeSpan, 'begin'));
+                    var end = nodeVal(get1(timeSpan, 'end'));
+                    properties.timespan = { begin: begin, end: end };
+                }
+                if (lineStyle) {
+                    var linestyles = kmlColor(nodeVal(get1(lineStyle, 'color'))),
+                        color = linestyles[0],
+                        opacity = linestyles[1],
+                        width = parseFloat(nodeVal(get1(lineStyle, 'width')));
+                    if (color) properties.stroke = color;
+                    if (!isNaN(opacity)) properties['stroke-opacity'] = opacity;
+                    if (!isNaN(width)) properties['stroke-width'] = width;
+                }
+                if (polyStyle) {
+                    var polystyles = kmlColor(nodeVal(get1(polyStyle, 'color'))),
+                        pcolor = polystyles[0],
+                        popacity = polystyles[1],
+                        fill = nodeVal(get1(polyStyle, 'fill')),
+                        outline = nodeVal(get1(polyStyle, 'outline'));
+                    if (pcolor) properties.fill = pcolor;
+                    if (!isNaN(popacity)) properties['fill-opacity'] = popacity;
+                    if (fill) properties['fill-opacity'] = fill === "1" ? 1 : 0;
+                    if (outline) properties['stroke-opacity'] = outline === "1" ? 1 : 0;
+                }
+                if (extendedData) {
+                    var datas = get(extendedData, 'Data'),
+                        simpleDatas = get(extendedData, 'SimpleData');
+
+                    for (i = 0; i < datas.length; i++) {
+                        properties[datas[i].getAttribute('name')] = nodeVal(get1(datas[i], 'value'));
+                    }
+                    for (i = 0; i < simpleDatas.length; i++) {
+                        properties[simpleDatas[i].getAttribute('name')] = nodeVal(simpleDatas[i]);
+                    }
+                }
+                return [{
+                    type: 'Feature',
+                    geometry: (geoms.length === 1) ? geoms[0] : {
+                        type: 'GeometryCollection',
+                        geometries: geoms
+                    },
+                    properties: properties
+                }];
+            }
+            return gj;
+        },
+        gpx: function(doc, o) {
+            var i,
+                tracks = get(doc, 'trk'),
+                routes = get(doc, 'rte'),
+                waypoints = get(doc, 'wpt'),
+                // a feature collection
+                gj = fc();
+            for (i = 0; i < tracks.length; i++) {
+                gj.features.push(getTrack(tracks[i]));
+            }
+            for (i = 0; i < routes.length; i++) {
+                gj.features.push(getRoute(routes[i]));
+            }
+            for (i = 0; i < waypoints.length; i++) {
+                gj.features.push(getPoint(waypoints[i]));
+            }
+            function getPoints(node, pointname) {
+                var pts = get(node, pointname), line = [];
+                for (var i = 0; i < pts.length; i++) {
+                    line.push(coordPair(pts[i]));
+                }
+                return line;
+            }
+            function getTrack(node) {
+                var segments = get(node, 'trkseg'), track = [];
+                for (var i = 0; i < segments.length; i++) {
+                    track.push(getPoints(segments[i], 'trkpt'));
+                }
+                return {
+                    type: 'Feature',
+                    properties: getProperties(node),
+                    geometry: {
+                        type: track.length === 1 ? 'LineString' : 'MultiLineString',
+                        coordinates: track.length === 1 ? track[0] : track
+                    }
+                };
+            }
+            function getRoute(node) {
+                return {
+                    type: 'Feature',
+                    properties: getProperties(node),
+                    geometry: {
+                        type: 'LineString',
+                        coordinates: getPoints(node, 'rtept')
+                    }
+                };
+            }
+            function getPoint(node) {
+                var prop = getProperties(node);
+                prop.sym = nodeVal(get1(node, 'sym'));
+                return {
+                    type: 'Feature',
+                    properties: prop,
+                    geometry: {
+                        type: 'Point',
+                        coordinates: coordPair(node)
+                    }
+                };
+            }
+            function getProperties(node) {
+                var meta = ['name', 'desc', 'author', 'copyright', 'link',
+                            'time', 'keywords'],
+                    prop = {},
+                    k;
+                for (k = 0; k < meta.length; k++) {
+                    prop[meta[k]] = nodeVal(get1(node, meta[k]));
+                }
+                return clean(prop);
+            }
+            return gj;
+        }
+    };
+    return t;
+})();
+
+if (typeof module !== 'undefined') module.exports = toGeoJSON;</script>
+<p>The route above was used to generate the following video.</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/7M4ZJ4Q5jOk" frameborder="0" allowfullscreen></iframe></div>
+<p><a href="https://www.youtube.com/embed/7M4ZJ4Q5jOk" target="_blank" rel="external">YouTube: Hyperlapse from Cork to Galway</a></p>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><ul>
+<li>KML file: This can by created in Google My Maps. Click on “Add a direction” enter your departure and arrival destinations and then tweak the line string to suite your exact route. Save as KML.</li>
+<li><a href="http://console.developers.google.com" target="_blank" rel="external">Generate your own Google API key</a> to be able to download the street view images via the API.</li>
+<li>FFMPEG if using script to generate video. Alternatively use Blender or other third party tools.</li>
+<li>Numerous python packages. </li>
+</ul>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">(&quot;-v&quot;, &quot;--verbose&quot;, action=&quot;store_true&quot;, dest=&apos;verbose&apos;)</div><div class="line">(&quot;-q&quot;, &quot;--quiet&quot;, action=&quot;store_true&quot;)</div><div class="line">(&quot;-i&quot;, &quot;--input&quot;, type=str, dest=&apos;kml&apos;, help=&quot;KML Route in LineString format&quot;)</div><div class="line">(&quot;-o&quot;, &quot;--output&quot;, type=str, dest=&apos;out_folder&apos;, help=&quot;Folder for output images&quot;)</div><div class="line">(&quot;-k&quot;, &quot;--key&quot;, type=str, dest=&apos;key&apos;, help=&quot;Google Image API Key&quot;)</div><div class="line">(&quot;-b&quot;, &quot;--blend&quot;, type=str, dest=&apos;blend_steps&apos;, help=&quot;Number of steps for blending images&quot;)</div><div class="line">(&quot;-f&quot;, &quot;--fps&quot;, type=str, dest=&apos;video_fps&apos;, help=&quot;Frames per second for the generated video&quot;)</div><div class="line">(&quot;-w&quot;, &quot;--workspace&quot;, type=str, dest=&apos;workspace_folder&apos;, help=&quot;Temporary folder to store the blended images&quot;)</div><div class="line">(&quot;-c&quot;, &quot;--cleanup&quot;, type=str, dest=&apos;cleanup_workspace&apos;, help=&quot;Cleanup the workspace folder, Yes or No&quot;)</div><div class="line">(&quot;-p&quot;, &quot;--phase&quot;, type=str, dest=&apos;operation_phase&apos;,</div><div class="line">help=&quot;1: download images + remove duplicates, </div><div class="line">2: blend images, </div><div class="line">3: generate video, </div><div class="line">4: download + remove + blend, </div><div class="line">5: download + remove + blend + video, </div><div class="line">6: blend + video&quot; )</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Script parameters example:</div><div class="line">-p 4 -v --input &quot;example.kml&quot; --workspace &quot;d:\temp_images&quot;  --output &quot;d:\output&quot; --blend 10 --key &quot;tYpEyOuRoWnAPIKEYhErE&quot;</div></pre></td></tr></table></figure>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.cosmic-engineer.com/2016/10/23/pyHyperlapse/" data-id="ciuo9rfyx0003aouz6fb80ha2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.cosmic-engineer.com/2016/10/23/pyHyperlapse/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://blog.cosmic-engineer.com/2016/10/23/pyHyperlapse/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-First-production-site" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/10/23/First-production-site/">First, but really second production site</a>
         </h1>
     
 
@@ -423,36 +1049,8 @@ First stage of the siteI had this initially hosted on google ap">
         </footer>
     </div>
     
-        
-<nav id="article-nav">
-    
-        <a href="/2016/10/23/pyHyperlapse/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Newer</strong>
-            <div class="article-nav-title">
-                
-                    pyHyperlapse
-                
-            </div>
-        </a>
-    
-    
-</nav>
-
-
-    
 </article>
 
-
-    
-    <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-    
-    </section>
 
 </section>
             
@@ -592,13 +1190,11 @@ First stage of the siteI had this initially hosted on google ap">
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://blog.cosmic-engineer.com/2016/10/23/First-production-site/';
-        
-        this.page.identifier = 'First-production-site';
+        this.page.identifier = 'undefined';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'cosmic-engineer' + '.disqus.com/embed.js';
+        s.src = '//' + 'cosmic-engineer' + '.disqus.com/count.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
