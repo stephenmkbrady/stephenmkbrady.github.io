@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>cosmic-engineer.com/posts/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/posts/updates/</loc>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/showcase/</loc>
+    <lastmod>2018-04-22T23:54:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/</loc>
+    <lastmod>2018-04-22T19:34:02+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>cosmic-engineer.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
